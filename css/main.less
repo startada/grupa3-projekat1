@@ -1,5 +1,20 @@
 @import 'common/common';
+.ubuntu(){
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
 
+.playfair(){
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+@main-text-color:#626262;
+
+html, body{
+  .playfair();
+  color:@main-text-color;
+}
 //############ mobile ################
 .mobile-navigation {
   position: fixed;
@@ -106,7 +121,37 @@
 
 //########### end mobile ##########
 
-
+.main-menu-container{
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    li{
+      display: inline-block;
+      a{
+        text-transform: uppercase;
+        padding: 0 60px;
+        &:link, &:visited {
+          color: @main-text-color;
+        }
+        &:hover, &:focus, &:active {
+          color: darken(@main-text-color, 30%);
+        }
+      }
+      &:first-child{
+        a{
+          padding-left: 0;
+        }
+      }
+      &:last-child{
+        a{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
 
 
     /* Large Devices, Wide Screens */
