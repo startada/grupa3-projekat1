@@ -1,20 +1,22 @@
 @import 'common/common';
-.ubuntu(){
+
+.ubuntu() {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
 
-.playfair(){
+.playfair() {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
 
-@main-text-color:#626262;
+@main-text-color: #626262;
 
-html, body{
+html, body {
   .playfair();
-  color:@main-text-color;
+  color: @main-text-color;
 }
+
 //############ mobile ################
 .mobile-navigation {
   position: fixed;
@@ -34,7 +36,7 @@ html, body{
     float: left;
     width: auto;
     max-width: 199px;
-    height: 45px;
+    height: 23px;
     margin-top: 0;
     margin-left: 20px;
 
@@ -42,7 +44,7 @@ html, body{
     a {
       display: block;
       overflow: hidden;
-      height: 45px;
+      height: 23px;
       img {
         width: auto;
         height: 100%;
@@ -120,17 +122,27 @@ html, body{
 }
 
 //########### end mobile ##########
+.logo-container {
+  height: 165px;
+  a {
+    display: block;
+    .vertical-center3lines();
+  }
+}
 
-.main-menu-container{
-  ul{
+.main-menu-container {
+  height: 165px;
+  ul {
+    .vertical-center3lines();
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: right;
-    li{
+    li {
       display: inline-block;
-      a{
+      a {
         text-transform: uppercase;
+
         padding: 0 60px;
         &:link, &:visited {
           color: @main-text-color;
@@ -139,13 +151,13 @@ html, body{
           color: darken(@main-text-color, 30%);
         }
       }
-      &:first-child{
-        a{
+      &:first-child {
+        a {
           padding-left: 0;
         }
       }
-      &:last-child{
-        a{
+      &:last-child {
+        a {
           padding-right: 0;
         }
       }
@@ -153,42 +165,60 @@ html, body{
   }
 }
 
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (max-width : 1200px) {
-
+.hero{
+  .hero-container{
+    overflow: hidden;
+    background-color: yellow;
+    padding-top: 44.736%;
+    img{
+      .img-responsive-fixed-aspect-ratio();
     }
+  }
+}
 
-    /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .main-menu-container {
+    ul {
+      li {
+        a {
+          padding: 0 25px;
+        }
+      }
     }
-    
-    /*Ipad Landscape */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-    }
-    
-    /*Ipad Portrait*/
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    
-    }
+  }
+}
 
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 767px) {
+/*Ipad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
 
-    }
+/*Ipad Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 480px) {
+}
 
-    }
-    
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 479px) {
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
 
-    }
+}
 
-    /* Custom, iPhone Retina */ 
-    @media only screen and (max-width : 320px) {
-        
-    }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
