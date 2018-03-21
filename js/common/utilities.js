@@ -129,7 +129,6 @@ var utilities = (function($) {
             $('.background-image-listener-cover').each(function(index) {
 
                 var targetImage = $(this).find('img.background-image-source');
-                console.log(targetImage);
                 var imagePath = targetImage.attr('src');
                 SetContainerBackgroundImage($(this), imagePath, 'cover');
                 targetImage.remove();

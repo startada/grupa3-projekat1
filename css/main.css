@@ -317,7 +317,7 @@ body {
 }
 .hero .hero-container {
   overflow: hidden;
-  background-color: yellow;
+  margin-bottom: 95px;
   padding-top: 44.736%;
 }
 .hero .hero-container img {
@@ -327,11 +327,56 @@ body {
   width: auto;
   height: auto;
 }
+.article-container {
+  margin: 0 80px;
+}
+.article-container .article-image {
+  margin: 130px 0 30px;
+  overflow: hidden;
+  padding-top: 66.67%;
+}
+.article-container .article-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.article-container .article-link {
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.article-container .article-link:link,
+.article-container .article-link:visited {
+  color: #b4ad9e;
+}
+.article-container .article-link:hover,
+.article-container .article-link:focus,
+.article-container .article-link:active {
+  color: #857b67;
+}
+.article-container h2 {
+  margin: 20px 0 30px;
+}
+.article-container .article-content {
+  margin-bottom: 35px;
+  line-height: 171.42857143%;
+}
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .logo-container {
+    height: 100px;
+  }
+  .main-menu-container {
+    height: 100px;
+  }
   .main-menu-container ul li a {
     padding: 0 25px;
+  }
+  .hero .hero-container {
+    margin-bottom: 50px;
   }
 }
 /*Ipad Landscape */

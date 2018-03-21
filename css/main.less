@@ -5,6 +5,11 @@
   font-weight: 400;
 }
 
+.ubuntu-light() {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
 .playfair() {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -168,11 +173,43 @@ html, body {
 .hero{
   .hero-container{
     overflow: hidden;
-    background-color: yellow;
+    margin-bottom: 95px;
     padding-top: 44.736%;
     img{
       .img-responsive-fixed-aspect-ratio();
     }
+  }
+}
+
+.article-container{
+  margin: 0 80px;
+  .article-image{
+    margin:130px 0 30px;
+    overflow: hidden;
+    padding-top: 66.67%;
+    img{
+      .img-responsive-fixed-aspect-ratio();
+    }
+  }
+  .article-link{
+    text-transform: uppercase;
+    .ubuntu-light();
+    &:link, &:visited {
+      color: #b4ad9e;
+    }
+    &:hover, &:focus, &:active {
+      color: darken(#b4ad9e,20%);
+    }
+  }
+
+  h2{
+    margin: 20px 0 30px;
+  }
+
+  .article-content{
+    margin-bottom: 35px;
+    .photoshopLineHeight(24,14);
+
   }
 }
 
@@ -183,13 +220,23 @@ html, body {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .logo-container{
+    height: 100px;
+  }
   .main-menu-container {
+    height: 100px;
     ul {
       li {
         a {
           padding: 0 25px;
         }
       }
+    }
+  }
+
+  .hero{
+    .hero-container{
+      margin-bottom: 50px;
     }
   }
 }
