@@ -56,8 +56,14 @@
         //
         // articleContent.height(higherOne);
 
+        // utilities.EqualizeElementsHeightByRow($('.title.half'));
+        // utilities.EqualizeElementsHeightByRow(articleContent);
+        $(this).trigger('resize');
+    });
+
+    $(window).resize($.throttle(250,function(){
         utilities.EqualizeElementsHeightByRow($('.title.half'));
         utilities.EqualizeElementsHeightByRow(articleContent);
-    });
+    }));
 
 }());

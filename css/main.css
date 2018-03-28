@@ -375,6 +375,35 @@ body {
 .article-container.half.right {
   margin: 0 80px 0 0;
 }
+.gray-container {
+  background-color: #f0f0f0;
+  margin: 126px 0;
+  padding: 50px 0 75px;
+}
+.gray-container .signup-form-container {
+  text-align: center;
+}
+.gray-container .signup-form-container .signup-form-inner {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+.gray-container .signup-form-container .signup-form-inner h2 {
+  margin-bottom: 85px;
+  color: #333333;
+  letter-spacing: 0.025em;
+}
+.gray-container .signup-form-container .signup-form-inner input {
+  background-color: transparent;
+  border: 0;
+}
+.gray-container .signup-form-container .signup-form-inner input[type='submit'] {
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+.gray-container .signup-form-container .signup-form-inner input[type='email'] {
+  width: calc(100% - 37px);
+}
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -394,6 +423,18 @@ body {
 /*Ipad Landscape */
 /*Ipad Portrait*/
 /* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .article-container .article-image {
+    margin: 30px 0 30px;
+  }
+  .article-container.full {
+    padding: 0;
+  }
+  .article-container.half.left,
+  .article-container.half.right {
+    margin: 0 0 0 0;
+  }
+}
 /* Extra Small Devices, Phones */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
