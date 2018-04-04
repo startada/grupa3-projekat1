@@ -410,7 +410,7 @@ body {
 }
 .load-more-button-container a {
   border: 1px solid #626262;
-  padding: 20px  30px;
+  padding: 20px 30px;
   display: inline-block;
   font-size: 20px;
 }
@@ -424,12 +424,49 @@ body {
   color: #2f2f2f;
   background-color: #f2f2f2;
 }
+.load-more-button-container a:after {
+  content: '\f04b';
+  font-family: FontAwesome;
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+}
 .load-more-button-container a i {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+}
+.load-more-button-container a.opened:after {
+  content: '\f04b';
+  font-family: FontAwesome;
+  display: inline-block;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.load-more-button-container a.opened i {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
