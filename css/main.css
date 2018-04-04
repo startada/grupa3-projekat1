@@ -377,7 +377,7 @@ body {
 }
 .gray-container {
   background-color: #f0f0f0;
-  margin: 126px 0;
+  margin: 126px 0 30px;
   padding: 50px 0 75px;
 }
 .gray-container .signup-form-container {
@@ -403,6 +403,10 @@ body {
 }
 .gray-container .signup-form-container .signup-form-inner input[type='email'] {
   width: calc(100% - 37px);
+}
+.load-more-button-container a {
+  border: 1px solid #626262;
+  padding: 20px  30px;
 }
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
