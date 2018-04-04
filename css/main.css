@@ -404,9 +404,32 @@ body {
 .gray-container .signup-form-container .signup-form-inner input[type='email'] {
   width: calc(100% - 37px);
 }
+.load-more-button-container {
+  text-align: center;
+  padding: 100px 0;
+}
 .load-more-button-container a {
   border: 1px solid #626262;
   padding: 20px  30px;
+  display: inline-block;
+  font-size: 20px;
+}
+.load-more-button-container a:link,
+.load-more-button-container a:visited {
+  color: #626262;
+}
+.load-more-button-container a:hover,
+.load-more-button-container a:focus,
+.load-more-button-container a:active {
+  color: #2f2f2f;
+  background-color: #f2f2f2;
+}
+.load-more-button-container a i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */

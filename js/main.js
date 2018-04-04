@@ -10,6 +10,7 @@
     var articleContent = $('.article-container.half').find('.article-content');
     var higherOne = Number.MIN_VALUE;
 
+
     /**
      * events
      */
