@@ -187,8 +187,28 @@ html, body {
     margin: 130px 0 30px;
     overflow: hidden;
     padding-top: 66.67%;
+    position: relative;
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 50px 50px 0;
+      border-color: transparent rgba(0, 0, 0, 0.3) transparent transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
     img {
       .img-responsive-fixed-aspect-ratio();
+    }
+    i {
+      color: white;
+      position: absolute;
+      top: 7px;
+      right: 6px;
+      display: block;
+      font-size: 18px;
     }
   }
   .article-link {
@@ -278,8 +298,8 @@ html, body {
       color: darken(@main-text-color, 20%);
       background-color: #f2f2f2;
     }
-    &:after{
-      content:'\f04b';
+    &:after {
+      content: '\f04b';
       .fontAwesome();
       display: inline-block;
       -webkit-transform: rotate(90deg);
@@ -296,7 +316,7 @@ html, body {
     }
   }
   a.opened {
-    &:after{
+    &:after {
       content: '\f04b';
       .fontAwesome();
       display: inline-block;
@@ -309,8 +329,7 @@ html, body {
   }
 }
 
-.toggle-row{
-  background-color: yellow;
+.toggle-row {
   max-height: 0;
   -webkit-transition: max-height 1s 1s;
   -moz-transition: max-height 1s 1s;
@@ -318,16 +337,43 @@ html, body {
   -o-transition: max-height 1s 1s;
   transition: max-height 1s 1s;
   overflow: hidden;
-  .article-container{
-    .article-image{
+  .article-container {
+    .article-image {
       margin-top: 0;
     }
 
   }
 }
 
-.toggle-row.opened{
-  max-height:700px
+.toggle-row.opened {
+  max-height: 700px
+}
+
+.footer-wrapper{
+  background-color: #f0f0f0;
+  .footer-inner{
+    height: 100px;
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      .vertical-center3lines();
+      li{
+        display: inline-block;
+        a{
+          display: block;
+          &:link, &:visited {
+            color: black;
+          }
+          &:hover, &:focus, &:active {
+            color: lighten(black, 20%);
+          }
+        }
+      }
+    }
+
+  }
+
 }
 
 /* Large Devices, Wide Screens */
@@ -358,7 +404,7 @@ html, body {
     }
   }
 
-  .article-container.full, .article-container.half.right, .article-container.half.left{
+  .article-container.full, .article-container.half.right, .article-container.half.left {
     margin: 0;
   }
 }

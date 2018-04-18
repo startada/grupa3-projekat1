@@ -33,7 +33,7 @@
                     case 'none':
                         icon.removeClass();
                         icon.addClass('fa fa-times');
-                        return false;
+                        // return false;
                         break;
                     case 'block':
                         icon.removeClass();
@@ -61,10 +61,11 @@
 
         // utilities.EqualizeElementsHeightByRow($('.title.half'));
         // utilities.EqualizeElementsHeightByRow(articleContent);
-        articleImage.each(function(){
-            var imageUrl = $(this).attr('style').split(';')[0].replace('background-image: url("','').replace('")','');
-            console.log(imageUrl);
-            $(this).wrap('<a href="'+ imageUrl +'" data-lightbox="minimo" data-title="My caption"></a>');
+        articleImage.each(function() {
+            var imageUrl = $(this).attr('style').split(';')[0].replace('background-image: url("', '').replace('")', '');
+            $(this).append('<i class="fa fa-search-plus"></i>');
+            $(this).wrap('<a href="' + imageUrl + '" data-lightbox="minimo" data-title="My caption milojko"></a>')
+
         });
 
         $(this).trigger('resize');
@@ -86,7 +87,6 @@
         }
         $(this).toggleClass('opened');
         $('.toggle-row').toggleClass('opened');
-
 
     });
 
