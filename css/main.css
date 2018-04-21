@@ -359,6 +359,10 @@ body {
   display: block;
   font-size: 18px;
 }
+.article-container .article-image.single-post {
+  margin-top: 60px;
+  padding-top: 75%;
+}
 .article-container .article-link {
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
@@ -381,7 +385,14 @@ body {
 }
 .article-container .article-content {
   margin-bottom: 35px;
+}
+.article-container .article-content p {
   line-height: 171.42857143%;
+  margin-bottom: 25px;
+}
+.article-container .article-content p.tuka-stavila-italic {
+  font-style: italic;
+  padding: 0 30px;
 }
 .article-container.full {
   margin: 0 80px;
@@ -517,6 +528,16 @@ body {
 .footer-wrapper .footer-inner ul li a:active {
   color: #333333;
 }
+.footer-wrapper .footer-inner.terms ul li a {
+  margin-right: 20px;
+}
+.footer-wrapper .footer-inner.social ul {
+  text-align: right;
+}
+.footer-wrapper .footer-inner.social ul li a {
+  margin-left: 18px;
+  font-size: 15px;
+}
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -551,6 +572,17 @@ body {
   .article-container.half.left,
   .article-container.half.right {
     margin: 0 0 0 0;
+  }
+  .footer-wrapper {
+    padding: 20px 0;
+  }
+  .footer-wrapper .footer-inner.social,
+  .footer-wrapper .footer-inner.terms {
+    height: 40px;
+  }
+  .footer-wrapper .footer-inner.social ul,
+  .footer-wrapper .footer-inner.terms ul {
+    text-align: center;
   }
 }
 /* Extra Small Devices, Phones */

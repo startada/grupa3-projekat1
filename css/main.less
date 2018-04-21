@@ -211,6 +211,10 @@ html, body {
       font-size: 18px;
     }
   }
+  .article-image.single-post {
+    margin-top: 60px;
+    padding-top: 75%;
+  }
   .article-link {
     text-transform: uppercase;
     .ubuntu-light();
@@ -232,7 +236,14 @@ html, body {
 
   .article-content {
     margin-bottom: 35px;
-    .photoshopLineHeight(24, 14);
+    p {
+      .photoshopLineHeight(24, 14);
+      margin-bottom: 25px;
+    }
+    p.tuka-stavila-italic{
+      font-style: italic;
+      padding: 0 30px;
+    }
 
   }
 }
@@ -349,18 +360,20 @@ html, body {
   max-height: 700px
 }
 
-.footer-wrapper{
+
+
+.footer-wrapper {
   background-color: #f0f0f0;
-  .footer-inner{
+  .footer-inner {
     height: 100px;
-    ul{
+    ul {
       padding: 0;
       margin: 0;
       list-style: none;
       .vertical-center3lines();
-      li{
+      li {
         display: inline-block;
-        a{
+        a {
           display: block;
           &:link, &:visited {
             color: black;
@@ -372,6 +385,26 @@ html, body {
       }
     }
 
+  }
+  .footer-inner.terms {
+    ul {
+      li {
+        a {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .footer-inner.social {
+    ul {
+      text-align: right;
+      li {
+        a {
+          margin-left: 18px;
+          font-size: 15px;
+        }
+      }
+    }
   }
 
 }
@@ -433,6 +466,16 @@ html, body {
 
   .article-container.half.left, .article-container.half.right {
     margin: 0 0 0 0;
+  }
+
+  .footer-wrapper {
+    padding: 20px 0;
+    .footer-inner.social, .footer-inner.terms {
+      height: 40px;
+      ul {
+        text-align: center;
+      }
+    }
   }
 }
 

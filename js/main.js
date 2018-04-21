@@ -13,6 +13,7 @@
     var articleImage = articleContainer.find('.article-image');
     var higherOne = Number.MIN_VALUE;
     var showMoreButton = $('.load-more-button-container a');
+    var vladovoZajebavanje = $('.vladovo-zajebavanje');
 
     /**
      * events
@@ -20,6 +21,8 @@
 
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');
+    
+
 
     headerContainer.load('header.html', function() {
         var mobileMenuTrigger = $('.navigation-trigger a:last-child');
