@@ -240,11 +240,38 @@ html, body {
       .photoshopLineHeight(24, 14);
       margin-bottom: 25px;
     }
-    p.tuka-stavila-italic{
+    p.tuka-stavila-italic {
       font-style: italic;
       padding: 0 30px;
     }
 
+  }
+
+  .article-share-links-container {
+    margin: 60px 0 0;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        .ubuntu-light();
+        color: #b4ad9e;
+        a {
+          display: block;
+          margin-left: 12px;
+          font-size: 17px;
+          &:link, &:visited {
+            color: #b4ad9e;
+          }
+          &:hover, &:focus, &:active {
+            color: darken(#b4ad9e, 20%);
+          }
+        }
+      }
+    }
   }
 }
 
@@ -292,7 +319,33 @@ html, body {
       }
     }
   }
+
+  .recommendations-container {
+    .title {
+      text-transform: uppercase;
+      .ubuntu-light();
+      margin: 30px 0;
+    }
+    .recommendations-line {
+      font-size: 0;
+      margin: 0 -2%;
+      a.recommendation {
+        width: 33.3%;
+        display: inline-block;
+        padding: 0 2%;
+        .recommendation-image{
+          padding-top: 66%;
+        }
+        h2{
+          font-size: 20px;
+        }
+
+      }
+    }
+  }
 }
+
+
 
 .load-more-button-container {
   text-align: center;
@@ -359,8 +412,6 @@ html, body {
 .toggle-row.opened {
   max-height: 700px
 }
-
-
 
 .footer-wrapper {
   background-color: #f0f0f0;
