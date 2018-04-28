@@ -13,7 +13,7 @@
     var articleImage = articleContainer.find('.article-image');
     var higherOne = Number.MIN_VALUE;
     var showMoreButton = $('.load-more-button-container a');
-    var vladovoZajebavanje = $('.vladovo-zajebavanje');
+    var nameForInitialsContainer = $('.comment-content').find('h5');
 
     /**
      * events
@@ -92,5 +92,14 @@
         $('.toggle-row').toggleClass('opened');
 
     });
+
+    nameForInitialsContainer.each(function(){
+        var name = $(this).html().split(' ');
+        var finalInitials=(name[0][0]+name[1][0]);
+
+        console.log(name, finalInitials);
+    });
+
+
 
 }());

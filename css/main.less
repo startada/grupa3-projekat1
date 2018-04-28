@@ -290,11 +290,23 @@ html, body {
 .article-container.half.right {
   margin: 0 80px 0 0;
 }
+
 .title {
   text-transform: uppercase;
   .ubuntu-light();
   margin: 30px 0;
+
 }
+
+a.title {
+  &:link, &:visited {
+    color: #b4ad9e;
+  }
+  &:hover, &:focus, &:active {
+    color: darken(#b4ad9e, 20%);
+  }
+}
+
 .gray-container {
   background-color: #f0f0f0;
   margin: 126px 0 30px;
@@ -416,13 +428,43 @@ html, body {
   max-height: 700px
 }
 
-.comments-wrapper{
-  .comment-content{
-    .comment-avatar-image{
+.comments-wrapper {
 
+  .comment-inner {
+    margin-bottom: 60px;
+    .comment-avatar-image {
+      display: inline-block;
+      vertical-align: top;
+      .same-width-height(70px);
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #cae5e0;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 70px;
+      .ubuntu();
+      font-size: 34px;
+      img {
+        .img-responsive-fixed-aspect-ratio();
+      }
     }
-    .comment-inner-content{
-
+    .comment-content {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(~'100% - 100px');
+      padding-left: 40px;
+      h5 {
+        font-weight: 700;
+        margin: 0 0 15px;
+      }
+      .comment-inner-content {
+        .reply-link {
+          margin-top: 20px;
+        }
+      }
     }
   }
 }
@@ -473,8 +515,6 @@ html, body {
   }
 
 }
-
-
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

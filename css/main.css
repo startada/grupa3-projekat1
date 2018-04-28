@@ -442,6 +442,15 @@ body {
   font-weight: 300;
   margin: 30px 0;
 }
+a.title:link,
+a.title:visited {
+  color: #b4ad9e;
+}
+a.title:hover,
+a.title:focus,
+a.title:active {
+  color: #857b67;
+}
 .gray-container {
   background-color: #f0f0f0;
   margin: 126px 0 30px;
@@ -554,6 +563,60 @@ body {
 }
 .toggle-row.opened {
   max-height: 700px;
+}
+.comments-wrapper .comment-inner {
+  margin-bottom: 60px;
+}
+.comments-wrapper .comment-inner .comment-avatar-image {
+  display: inline-block;
+  vertical-align: top;
+  /**
+ ** how to use same-widt-height
+ **   if unit given in px
+ **   .same-width-height(65);
+ **        will produce:
+ **           width:65px;
+ **           height:65px;
+ **   other units need to be explicitly provided as an:
+ **   .same-width-height(65,vw)
+ **       will produce:
+ **         width:65vw;
+ **         height:65vw
+ **/
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #cae5e0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+}
+.comments-wrapper .comment-inner .comment-avatar-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.comments-wrapper .comment-inner .comment-content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 100px);
+  padding-left: 40px;
+}
+.comments-wrapper .comment-inner .comment-content h5 {
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+.comments-wrapper .comment-inner .comment-content .comment-inner-content .reply-link {
+  margin-top: 20px;
 }
 .footer-wrapper {
   background-color: #f0f0f0;
