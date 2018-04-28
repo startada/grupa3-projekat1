@@ -436,6 +436,12 @@ body {
 .article-container.half.right {
   margin: 0 80px 0 0;
 }
+.title {
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  margin: 30px 0;
+}
 .gray-container {
   background-color: #f0f0f0;
   margin: 126px 0 30px;
@@ -465,12 +471,6 @@ body {
 .gray-container .signup-form-container .signup-form-inner input[type='email'] {
   width: calc(100% - 37px);
 }
-.gray-container .recommendations-container .title {
-  text-transform: uppercase;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  margin: 30px 0;
-}
 .gray-container .recommendations-container .recommendations-line {
   font-size: 0;
   margin: 0 -2%;
@@ -485,6 +485,15 @@ body {
 }
 .gray-container .recommendations-container .recommendations-line a.recommendation h2 {
   font-size: 20px;
+}
+.gray-container .recommendations-container .recommendations-line a.recommendation:link,
+.gray-container .recommendations-container .recommendations-line a.recommendation:visited {
+  color: #626262;
+}
+.gray-container .recommendations-container .recommendations-line a.recommendation:hover,
+.gray-container .recommendations-container .recommendations-line a.recommendation:focus,
+.gray-container .recommendations-container .recommendations-line a.recommendation:active {
+  color: #2f2f2f;
 }
 .load-more-button-container {
   text-align: center;
