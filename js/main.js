@@ -96,8 +96,11 @@
     nameForInitialsContainer.each(function(){
         var name = $(this).html().split(' ');
         var finalInitials=(name[0][0]+name[1][0]);
+        var imageContainer = $(this).closest('.comment-inner').find('.comment-avatar-image');
+        if(!imageContainer.find('img').length){
+            imageContainer.html(finalInitials)
+        }
 
-        console.log(name, finalInitials);
     });
 
 
