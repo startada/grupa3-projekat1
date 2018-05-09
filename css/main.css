@@ -315,6 +315,9 @@ body {
 .main-menu-container ul li:last-child a {
   padding-right: 0;
 }
+.hero .hero-wrapper {
+  position: relative;
+}
 .hero .hero-container {
   overflow: hidden;
   margin-bottom: 95px;
@@ -382,6 +385,9 @@ body {
 }
 .article-container h2.title.half {
   display: block;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-transform: none;
 }
 .article-container .article-content {
   margin-bottom: 35px;
@@ -665,6 +671,31 @@ a.title:active {
   text-transform: uppercase;
   float: right;
 }
+.owl-theme .owl-nav {
+  position: absolute;
+  z-index: 99;
+  margin-top: -25%;
+  width: 100%;
+}
+.owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  left: 10px;
+  background-color: blue;
+}
+.owl-theme .owl-nav .owl-next {
+  position: absolute;
+  right: 10px;
+  background-color: red;
+}
+.owl-theme .owl-dots {
+  background-color: black;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: green;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: deepskyblue;
+}
 .spacer-80 {
   height: 80px;
 }
@@ -724,7 +755,7 @@ a.title:active {
     padding: 0 25px;
   }
   .hero .hero-container {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   .article-container.full,
   .article-container.half.right,

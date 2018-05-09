@@ -15,14 +15,31 @@
     var showMoreButton = $('.load-more-button-container a');
     var nameForInitialsContainer = $('.comment-content').find('h5');
 
+    console.log($('.article-image'));
+
+if(utilities.IsExisty($('.owl-carousel'))){
+    $('.owl-carousel').owlCarousel({
+        nav               : true,
+        navText           : ["milojko", "radojko"],
+        navSpeed          : 1400,
+        dotsSpeed         : 1400,
+        dragEndSpeed      : 1400,
+        dots              : true,
+        items             : 1,
+        singleItem        : true,
+        autoplay          : true,
+        autoplayTimeout   : 4500,
+        autoplaySpeed     : 1400,
+        loop              : true,
+        autoplayHoverPause: true
+    });
+}
     /**
      * events
      */
 
     var headerContainer = $('.head-content-wrapper');
     var footerContainer = $('.footer-content-wrapper');
-    
-
 
     headerContainer.load('header.html', function() {
         var mobileMenuTrigger = $('.navigation-trigger a:last-child');
@@ -93,16 +110,14 @@
 
     });
 
-    nameForInitialsContainer.each(function(){
+    nameForInitialsContainer.each(function() {
         var name = $(this).html().split(' ');
-        var finalInitials=(name[0][0]+name[1][0]);
+        var finalInitials = (name[0][0] + name[1][0]);
         var imageContainer = $(this).closest('.comment-inner').find('.comment-avatar-image');
         if(!imageContainer.find('img').length){
             imageContainer.html(finalInitials)
         }
 
     });
-
-
 
 }());

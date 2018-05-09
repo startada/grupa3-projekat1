@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keva>
+    <racun>
+        <broj-racuna>123</broj-racuna>
+        <datum>2345</datum>
+        <artikli>
+            <artikal>carapa</artikal>
+            <artikal>gace</artikal>
+        </artikli>
+    </racun>
+    <racun>
+        <broj-racuna>123</broj-racuna>
+        <datum>2345</datum>
+        <artikli>
+            <artikal>carapa</artikal>
+            <artikal>gace</artikal>
+        </artikli>
+    </racun>
+    <racun>
+        <broj-racuna broj="123"/>
+        <datum broj="2345"/>
+
+    </racun>
+</keva>

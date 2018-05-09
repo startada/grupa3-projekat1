@@ -1,0 +1,14 @@
+[{
+  "broj-racuna": 123,
+  "datum": 2345,
+  "artikli": [
+    {
+      "naziv": "carapa",
+      "cena": 123
+    },
+    {
+      "naziv": "gace",
+      "cena": 345
+    }
+  ]
+}]
