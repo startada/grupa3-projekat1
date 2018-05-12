@@ -4,11 +4,13 @@
   "artikli": [
     {
       "naziv": "carapa",
-      "cena": 123
+      "cena": 123,
+      "prodato":6
     },
     {
       "naziv": "gace",
-      "cena": 345
+      "cena": 345,
+      "prodato":8
     }
   ]
 }]

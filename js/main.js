@@ -15,7 +15,6 @@
     var showMoreButton = $('.load-more-button-container a');
     var nameForInitialsContainer = $('.comment-content').find('h5');
 
-    console.log($('.article-image'));
 
 if(utilities.IsExisty($('.owl-carousel'))){
     $('.owl-carousel').owlCarousel({
@@ -68,19 +67,7 @@ if(utilities.IsExisty($('.owl-carousel'))){
     utilities.MoveExistingImagesToContainerBackgroundCover();
 
     $(window).load(function() {
-        // articleContent.each(function(tanja) {
-        //     var tempHeight = $(this).height();
-        //
-        //     if(tempHeight > higherOne){
-        //         higherOne = tempHeight;
-        //     }
-        //
-        // });
-        //
-        // articleContent.height(higherOne);
-
-        // utilities.EqualizeElementsHeightByRow($('.title.half'));
-        // utilities.EqualizeElementsHeightByRow(articleContent);
+        
         articleImage.each(function() {
             var imageUrl = $(this).attr('style').split(';')[0].replace('background-image: url("', '').replace('")', '');
             $(this).append('<i class="fa fa-search-plus"></i>');
@@ -119,5 +106,7 @@ if(utilities.IsExisty($('.owl-carousel'))){
         }
 
     });
+
+
 
 }());
