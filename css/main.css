@@ -696,6 +696,12 @@ a.title:active {
 .owl-theme .owl-dots .owl-dot.active span {
   background-color: deepskyblue;
 }
+.video-container {
+  margin-top: 60px;
+}
+.video-container iframe {
+  width: 100%;
+}
 .spacer-80 {
   height: 80px;
 }
