@@ -712,6 +712,10 @@ a.title:active {
 .v-main-navigation {
   margin-top: 20px;
   margin-bottom: 20px;
+  position: fixed;
+  background-color: #cecece;
+  overflow: hidden;
+  z-index: 10;
 }
 .v-main-navigation ul {
   list-style: none;
