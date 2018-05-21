@@ -135,6 +135,10 @@ html, body {
   }
 }
 
+h2 {
+  font-size: 20px;
+}
+
 .main-menu-container {
   height: 165px;
   ul {
@@ -231,6 +235,7 @@ html, body {
 
   h2 {
     margin: 20px 0 30px;
+
   }
 
   h2.title.half {
@@ -523,23 +528,23 @@ a.title {
       left: 10px;
       background-color: blue;
     }
-    .owl-next{
+    .owl-next {
       position: absolute;
       right: 10px;
       background-color: red;
     }
 
   }
-  .owl-dots{
+  .owl-dots {
     background-color: black;
-    .owl-dot{
-      span{
+    .owl-dot {
+      span {
         background-color: green;
       }
 
     }
-    .owl-dot.active{
-      span{
+    .owl-dot.active {
+      span {
         background-color: deepskyblue;
       }
 
@@ -547,13 +552,13 @@ a.title {
   }
 }
 
-.video-container{
+.video-container {
   margin-top: 60px;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 
-  iframe{
+  iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -562,11 +567,11 @@ a.title {
   }
 }
 
-.v-spacer{
+.v-spacer {
   height: 90px;
 }
 
-.v-main-navigation{
+.v-main-navigation {
   //margin-top: 20px;
   width: 100%;
   margin-bottom: 20px;
@@ -581,16 +586,16 @@ a.title {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  ul{
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    li{
+    li {
       display: inline-block;
-      a{
+      a {
         padding: 10px 15px;
-        margin: 0 3px ;
+        margin: 0 3px;
         display: block;
         text-transform: uppercase;
         -webkit-border-radius: 4px;
@@ -602,18 +607,20 @@ a.title {
           color: #333;
         }
         &:hover, &:focus, &:active {
-          background-color: darken(#ededed,20%);
+          background-color: darken(#ededed, 20%);
         }
       }
     }
   }
 }
-.v-main-navigation.shrinked{
+
+.v-main-navigation.shrinked {
   box-shadow: 4px 7px 20px 0px rgba(0, 0, 0, 0.22);
   padding: 5px 0;
   background-color: #aaaaaa;
 }
-.v-content-block{
+
+.v-content-block {
   margin-bottom: 30px;
   background-color: #ededed;
   text-align: center;
@@ -623,11 +630,59 @@ a.title {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  h2{
+  h2 {
     .ubuntu-light();
 
   }
 }
+
+.accordion-wrapper {
+  margin-top: 50px;
+  min-height: calc(~'100vh - 265px');
+  .accordion-item {
+    margin-bottom: 10px;
+    a.accordion-trigger {
+      .ubuntu();
+      text-transform: uppercase;
+      font-size: 20px;
+      display: block;
+      padding: 10px 20px;
+      text-shadow: 1px 0px 0px rgba(0, 0, 0, 1);
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+
+      background: #7db9e8;
+      background: -moz-linear-gradient(top, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
+      background: -webkit-linear-gradient(top, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
+      background: linear-gradient(to bottom, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=0);
+      &:link, &:visited {
+        color: #fff;
+      }
+      &:hover, &:focus, &:active {
+        color: darken(#fff, 20%);
+      }
+    }
+    .accordion-content {
+      background-color: #f2f2f2;
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 1.5s;
+      -moz-transition: max-height 1.5s;
+      -ms-transition: max-height 1.5s;
+      -o-transition: max-height 1.5s;
+      transition: max-height 1.5s;
+      .accordion-content-inner {
+        margin: 20px;
+      }
+    }
+    .accordion-content.active{
+      max-height:200px;
+    }
+  }
+}
+
 .spacer-80 {
   height: 80px;
 }
