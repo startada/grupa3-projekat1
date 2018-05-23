@@ -636,12 +636,27 @@ a.title {
   }
 }
 
-.accordion-wrapper {
+.accordion-wrapper, .finale-content-wrapper {
   margin-top: 50px;
   min-height: calc(~'100vh - 265px');
   .accordion-item {
     margin-bottom: 10px;
     a.accordion-trigger {
+      &:after{
+        content: '\f04b';
+        .fontAwesome();
+        color: white;
+        transform:rotate(90deg);
+        -webkit-transition: transform 1s;
+        -moz-transition: transform 1s;
+        -ms-transition: transform 1s;
+        -o-transition: transform 1s;
+        transition: transform 1s;
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+      }
       .ubuntu();
       text-transform: uppercase;
       font-size: 20px;
@@ -664,21 +679,7 @@ a.title {
       &:hover, &:focus, &:active {
         color: darken(#fff, 20%);
       }
-      &:after{
-        content: '\f04b';
-        .fontAwesome();
-        color: white;
-        transform:rotate(90deg);
-        -webkit-transition: transform 1s;
-        -moz-transition: transform 1s;
-        -ms-transition: transform 1s;
-        -o-transition: transform 1s;
-        transition: transform 1s;
-        display: inline-block;
-        position: absolute;
-        right: 30px;
-        top: 10px;
-      }
+
     }
     a.accordion-trigger.opened{
       &:after{

@@ -780,14 +780,17 @@ a.title:active {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
-.accordion-wrapper {
+.accordion-wrapper,
+.finale-content-wrapper {
   margin-top: 50px;
   min-height: calc(100vh - 265px);
 }
-.accordion-wrapper .accordion-item {
+.accordion-wrapper .accordion-item,
+.finale-content-wrapper .accordion-item {
   margin-bottom: 10px;
 }
-.accordion-wrapper .accordion-item a.accordion-trigger {
+.accordion-wrapper .accordion-item a.accordion-trigger,
+.finale-content-wrapper .accordion-item a.accordion-trigger {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -805,16 +808,8 @@ a.title:active {
   background: linear-gradient(to bottom, #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=0);
 }
-.accordion-wrapper .accordion-item a.accordion-trigger:link,
-.accordion-wrapper .accordion-item a.accordion-trigger:visited {
-  color: #fff;
-}
-.accordion-wrapper .accordion-item a.accordion-trigger:hover,
-.accordion-wrapper .accordion-item a.accordion-trigger:focus,
-.accordion-wrapper .accordion-item a.accordion-trigger:active {
-  color: #cccccc;
-}
-.accordion-wrapper .accordion-item a.accordion-trigger:after {
+.accordion-wrapper .accordion-item a.accordion-trigger:after,
+.finale-content-wrapper .accordion-item a.accordion-trigger:after {
   content: '\f04b';
   font-family: FontAwesome;
   color: white;
@@ -829,10 +824,26 @@ a.title:active {
   right: 30px;
   top: 10px;
 }
-.accordion-wrapper .accordion-item a.accordion-trigger.opened:after {
+.accordion-wrapper .accordion-item a.accordion-trigger:link,
+.finale-content-wrapper .accordion-item a.accordion-trigger:link,
+.accordion-wrapper .accordion-item a.accordion-trigger:visited,
+.finale-content-wrapper .accordion-item a.accordion-trigger:visited {
+  color: #fff;
+}
+.accordion-wrapper .accordion-item a.accordion-trigger:hover,
+.finale-content-wrapper .accordion-item a.accordion-trigger:hover,
+.accordion-wrapper .accordion-item a.accordion-trigger:focus,
+.finale-content-wrapper .accordion-item a.accordion-trigger:focus,
+.accordion-wrapper .accordion-item a.accordion-trigger:active,
+.finale-content-wrapper .accordion-item a.accordion-trigger:active {
+  color: #cccccc;
+}
+.accordion-wrapper .accordion-item a.accordion-trigger.opened:after,
+.finale-content-wrapper .accordion-item a.accordion-trigger.opened:after {
   transform: rotate(270deg);
 }
-.accordion-wrapper .accordion-item .accordion-content {
+.accordion-wrapper .accordion-item .accordion-content,
+.finale-content-wrapper .accordion-item .accordion-content {
   background-color: #f2f2f2;
   max-height: 0;
   overflow: hidden;
@@ -842,10 +853,12 @@ a.title:active {
   -o-transition: max-height 1.5s;
   transition: max-height 1.5s;
 }
-.accordion-wrapper .accordion-item .accordion-content .accordion-content-inner {
+.accordion-wrapper .accordion-item .accordion-content .accordion-content-inner,
+.finale-content-wrapper .accordion-item .accordion-content .accordion-content-inner {
   margin: 20px;
 }
-.accordion-wrapper .accordion-item .accordion-content.active {
+.accordion-wrapper .accordion-item .accordion-content.active,
+.finale-content-wrapper .accordion-item .accordion-content.active {
   max-height: 200px;
 }
 .spacer-80 {
