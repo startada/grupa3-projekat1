@@ -16,13 +16,18 @@
     accordionTrigger.click(function(){
         if($(this).parent().find('.accordion-content').hasClass('active')){
             $(this).parent().find('.accordion-content').removeClass('active');
+            $(this).removeClass('opened');
             return;
         }
         else{
             accordionContents.each(function(){
                 $(this).removeClass('active');
             });
+            accordionTrigger.each(function(){
+                $(this).removeClass('opened');
+            });
             $(this).parent().find('.accordion-content').addClass('active');
+            $(this).addClass('opened');
         }
 
     })
